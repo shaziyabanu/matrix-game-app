@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.agmosoft.shaziya.matrixgame.MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/apptext"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Number         Matrix"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:text="play"
+        android:id="@+id/buttonplay"
+        android:textStyle="italic"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_bg_round_corners"
+        android:typeface="serif"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="playClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:id="@+id/buttonSettings"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:onClick="settingsClick"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/buttonplay"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

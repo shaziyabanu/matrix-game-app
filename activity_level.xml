@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.agmosoft.shaziya.matrixgame.LevelActivity"
+    >
+
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:id="@+id/levelText"
+        android:text="Select level"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1" />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:id="@+id/button1"
+        android:onClick="level1Select"
+        android:text="Level 1"
+        android:textSize="35dp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:background="@drawable/all_buttons"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/levelText"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:id="@+id/button2"
+        android:onClick="level2Select"
+        android:text="Level 2"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:background="@drawable/all_buttons"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:id="@+id/button3"
+        android:onClick="level3Select"
+        android:text="Level 3"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:background="@drawable/all_buttons"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

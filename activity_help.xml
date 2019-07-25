@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="           HOW TO PLAY!
+
+        Presented with a odd matrix, drag number from below presented number and drop it into the matrix, you need to fill the non-repeating numbers in the matrix. Each line horizontally / vertically should add up to n (sqr (n) +1) / 2. On filling the numbers correctly in the matrix with in the limited time you win the game.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example:
+In 3 x 3 matrix ,fill numbers 1 - 9 in each box. Each line of the matrix both horizontally/Vertically should add up to 3 ( 9 + 1) /2 =
+15."
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

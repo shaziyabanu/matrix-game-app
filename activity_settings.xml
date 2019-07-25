@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/settingsLayout"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/settingsText"
+        android:text="Settings"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:typeface="serif"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textOff="Sound: OFF"
+        android:textOn="Sound: ON"
+        android:background="@drawable/settings_buttons"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="100dp" />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="HighScore"
+        android:id="@+id/buttonScore"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:onClick="scoreClick"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignLeft="@+id/buttonhelp"
+        android:layout_alignStart="@+id/buttonhelp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="Help"
+        android:id="@+id/buttonhelp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:onClick="helpButton"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/buttonScore"
+        android:layout_alignLeft="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="About"
+        android:id="@+id/buttonAbout"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:onClick="aboutButton"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/buttonhelp"
+        android:layout_alignLeft="@+id/buttonScore"
+        android:layout_alignStart="@+id/buttonScore" />
+
+</RelativeLayout>

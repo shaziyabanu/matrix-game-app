@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Score Board"
+        android:padding="20dp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/scoreBoardTextView"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="Level 1"
+        android:id="@+id/level1Score"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:onClick="level1Score"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/buttonhelp"
+        android:layout_alignLeft="@+id/level2Score"
+        android:layout_alignStart="@+id/level2Score"
+        android:layout_below="@+id/scoreBoardTextView"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="Level 2"
+        android:id="@+id/level2Score"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:onClick="level2Score"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/level1Score"
+        android:layout_alignLeft="@+id/level3Score"
+        android:layout_alignStart="@+id/level3Score" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/settings_buttons"
+        android:text="Level 3"
+        android:id="@+id/level3Score"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="35dp"
+        android:onClick="level3Score"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/level2Score"/>
+</RelativeLayout>

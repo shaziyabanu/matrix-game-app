@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Level 1 Score Board"
+        android:paddingLeft="10dp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/level1ScoreBoardTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/headerName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/level1ScoreBoardTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/headerTime"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Time"
+        android:layout_below="@+id/level1ScoreBoardTextView"
+        android:layout_toStartOf="@+id/headerScore"
+        android:layout_toLeftOf="@+id/headerScore" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/headerScore"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Score"
+        android:layout_below="@+id/level1ScoreBoardTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/level1ScoreBoardTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+</RelativeLayout>

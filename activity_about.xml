@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="ABOUT NUMBER MATRIX:
+        Matrix is a simple logical game with numbers. Player is presented with odd numbered matrix.Within the given time limit player needs to fill the non-repeating numbers in the matrix horizontally / vertically should add up to n(sqr(n)+1)/2."
+
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:typeface="serif"/>
+</LinearLayout>
